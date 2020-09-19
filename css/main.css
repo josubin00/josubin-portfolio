@@ -1,0 +1,171 @@
+/*=============
+   Reset CSS
+==============*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,dl, dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+blockquote,q{quotes: none}
+blockquote:before,blockquote:after,
+q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing: 0}
+img{vertical-align:top}
+a{text-decoration:none;outline: 0}
+.clearfix{*zoom:1}
+.clearfix:after{content:"";display:block;clear:both}
+#fp-nav{display: none;}
+#fullpage>div{position: relative;}
+/*=================
+   Reset CSS End
+==================*/
+
+
+
+
+/*
+    ★ 모든 이미지 (배경 통 이미지)는 background 로 넣습니다. 하단 이미지 삭제하고 포트폴리오 배경 이미지를 경로에 넣으세요 ★
+        ※ 브라우저 크기에 따라 일정비율로 줄어들긴 하지만 16:9 비율을 유지하기 때문에 브라우저 크기 비율에 따라 이미지 양쪽 끝이 짤려 보일 수 있습니다.
+        background = 이미지 경로 ,
+        re-peat = 이미지 바둑패턴 반복 해제
+        center top = 이미지 가운데 상단 정렬
+        background-size = 2560 해상도로 봐도 이미지가 꽉 차게 유지
+
+
+
+    ★ 버튼를 만든 경우 해당 페이지 바로 아래에 선택자를 입력하고 반드시 position:absolute 로 위치를 설정하세요 ★
+        ※ left: 50%와 top: 50%; 주고 나머지 위치는 margin 으로 이동하여 브라우저 크기에 따라 이동할 수 있게 합니다.
+           ex)
+            버튼선택자 {
+                    position:absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: 위치값px;
+                    margin-top: 위치값px;
+                    }
+
+
+
+
+
+*/
+
+
+/*★ 각 페이지에 도착할 때마다 나타나면서 아래에서 위로 or 위에서 아래로 나타하는 효과를 주고 싶다면?? ★*/
+
+#fullpage>div .txt>div{opacity:0;transition:all 0.5s;}
+
+#fullpage>div .txt_bottom>div{/*아래에서 위로*/
+    -webkit-transform: translate(0, 30px);
+    -moz-transform: translate(0, 30px);
+    -ms-transform: translate(0, 30px);
+    -o-transform: translate(0, 30px);
+    transform: translate(0, 30px);}
+
+
+#fullpage>div .txt_top>div{/*위에서 아래로*/
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    -o-transform: translate(0, -30px);
+    transform: translate(0, -30px);}
+
+#fullpage>div .txt_right>div{/*오른쪽에서 왼쪽으로*/
+    -webkit-transform: translate(30px, 0);
+    -moz-transform: translate(30px, 0);
+    -ms-transform: translate(30px, 0);
+    -o-transform: translate(30px, 0);
+    transform: translate(30px, 0);}
+
+#fullpage>div .txt_left>div{/*왼쪽에서 오른쪽으로*/
+    -webkit-transform: translate(-30px, 0);
+    -moz-transform: translate(-30px, 0);
+    -ms-transform: translate(-30px, 0);
+    -o-transform: translate(-30px, 0);
+    transform: translate(-30px, 0);}
+
+
+
+#fullpage>div.active .txt>div{ /*나타나는 효과*/
+    opacity:1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);}
+
+/* ★ 순차적으로 나타나야 하기 때문에 시간차를 적용합니다 ★
+        ※ 갯수가 더 있다면 늘리면 되겠죠?
+*/
+/*스크롤 했을 때 각 씬으로 이동하는 시간이 약 0.5초 걸리기 때문에 0.5초부터 딜레이를 적용합니다*/
+#fullpage>div.active .txt .list1{transition-delay:0.5s;}
+#fullpage>div.active .txt .list2{transition-delay:0.75s;}
+#fullpage>div.active .txt .list3{transition-delay:1s;}
+#fullpage>div.active .txt .list4{transition-delay:1.25s;}
+
+/*============================================================*/
+
+/*================
+    gnb section
+=================*/
+
+#gnb {/*비어있는부분 채우면서 위치 설정하세요*/
+    /*width:;*/
+    /*height:;*/
+    /*position:fixed;*/
+    /*left:50%;*/
+    /*top:50%;*/
+    /*margin-left:;*/
+    /*margin-top:;*/
+    /*z-index:999999;*/
+}
+
+#gnb>li:nth-child(1){ /*마우스 올리기 전 이미지 , 이미지 경로 넣고 크기 설정*/
+    /*width:;*/
+    /*height:;*/
+    /*background:url("../이미지 경로")no-repeat center;*/
+}
+#gnb>li:nth-child(1):hover{ /*마우스 올렸을 때 변할 이미지 , 이미지 경로 넣고 크기 설정*/
+    /*★만약 마우스 올린 이미지 크기가 마우스 올리기 전 이미지와 같다면 width 값과 height 값은 설정하지 않으셔도 됩니다/★*/
+    /*width:;*/
+    /*height:;*/
+    /*background:url("../이미지 경로")no-repeat center;*/
+}
+
+/*이런식으로 ()안에 숫자를 넣어가며 이미지 설정 및 크기 설정하고 위치 설정하세요*/
+#gnb>li>a{display:block;height:100%;}  /*실제 마우스 클릭해서 이동해주는 클릭영역을 이미지 크기와 같게 해주는 CSS 설정문*/
+
+
+
+
+
+
+#section01{background:url("../img/bg1.jpg")no-repeat center top;background-size:cover;}
+
+#section02{background:url("../img/bg2.jpg")no-repeat center top;background-size:cover;}
+
+/*설정을 보여드리기 위해 테스트로 써둔것 뿐입니다 참고하셔서 다른 영억 코딩하지고 완성되면 지우세요*/
+#section02 .test1 {width:100px;height:100px;background:tomato}
+#section02 .test2 {width:100px;height:100px;background:orange;}
+#section02 .test3 {width:100px;height:100px;background:yellow;}
+#section02 .test4 {width:100px;height:100px;background:green;}
+/*=======================================================================================*/
+
+#section03{background:url("../img/bg3.jpg")no-repeat center top;background-size:cover;}
+#section04{background:url("../img/bg4.jpg")no-repeat center top;background-size:cover;}
+#section05{background:url("../img/bg5.jpg")no-repeat center top;background-size:cover;}
+
+
+
+
+
+

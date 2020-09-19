@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>조수빈 포트폴리오</title>
+    <link rel="stylesheet" href="css/fullPage.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if It IE 9]
+    <script src="js/respond.min.js"></script>
+    <[endif]-->
+</head>
+<body>
+
+<!--
+    ★ 총 페이지 갯수를 맞춰야합니다 ★
+    총 페이지 만큼 section 늘리면서 총 페이지와 맞추세요
+-->
+
+<!--
+
+    ★ 버튼을 만들어서 내 포트폴리오 사이트 (micro , ui 코딩 사이트 ) 연결하기 ★
+
+         - 해당 페이지에 버튼이 필요한 경우 태그를 만들고 a 태그로 감싼 뒤 href="포트폴리오 홈페이지 url"를 넣으세요
+        ※ 이때 주의사항으로 a태그에는 반드시 target="_blank"를 넣어서 새 탭으로 사이트 연결하도록 하세요 ※
+        ex)  <a href="http://주소.dothome.co.kr/" target="_blank"><img src="img/" alt="마이크로 페이지 이동"></a>
+        ※ 만약 이동을 해도 항상 그 자리에 고정시키는 이미지를 넣고 싶다면  fullpage 태그 바깥에 태그를 만들고 position:fixed 주셔야 합니다.
+        ★ nav 영역을 만들 때도 fullPage 바깥에 만드셔야 합니다.
+
+
+
+
+    ★ 해당 페이지에 왔을 때 영상을 자동으로 재생하기 ★
+
+        <video width="1920" height="725" data-autoplay loop muted>
+            <source src="영상 경로.mp4" type="video/mp4">
+        </video>
+
+        위에 태그를 넣으면 됩니다 ※비디오 영상은 반드시 mp4로 넣어야 합니다 (인터넷 익스플로러는 mp4만 지원하기 때문)
+
+        ※ 비디오 옵션
+            data-autoplay : 자동재생
+            loop = 영상이 끝나면 다시 처음부터 재생 (무재한 반복재생)
+            muted = 음소거
+
+-->
+
+<!--<ul id="gnb">-->
+<!--    <li><a href="#Page00"></a></li>-->
+<!--    <li><a href="#Page01"></a></li>-->
+<!--    <li><a href="#Page02"></a></li>-->
+<!--    <li><a href="#Page03"></a></li>-->
+<!--    <li><a href="#Page04"></a></li>-->
+<!--    <li><a href="#Page05"></a></li>-->
+<!--</ul>-->
+<!--nav 부분은 이 태그로 작성하시면 됩니다-->
+
+
+
+<div id="fullpage">
+
+    <div class="section" id="section01">
+        <a href="#"><img src="img/00.jpg"></a>
+    </div>
+    <div class="section" id="section02"> <a href="#"><img src="img/01.jpg"></a>
+
+        <!--설정을 보여드리기 위해 테스트로 써둔것 뿐입니다 참고하셔서 다른 영억 코딩하지고 완성되면 지우세요-->
+<!--        <div class="txt txt_bottom test">-->
+<!--            &lt;!&ndash;    txt = 클래스는 나타나는 효과를 주는 클래스(opacity) , ★ 여기에 나타나고자 하는 방항의 클래스를 추가한다 ★  ,  test = 위치 설정을 하기 위해 임의로 주는 클래스(선생님 임의로 준거니까 지우세요)&ndash;&gt;-->
+<!--           <div class="test1 list1"></div>  &lt;!&ndash;    list1 = 클래스는 나타나는 순서를 설정한 클래스 , test1 = 위치 설정을 하기 위해 임의로 주는 클래스 &ndash;&gt;-->
+<!--           <div class="test2 list2"></div>  &lt;!&ndash;    list1 = 클래스는 나타나는 순서를 설정한 클래스 , test1 = 위치 설정을 하기 위해 임의로 주는 클래스 &ndash;&gt;-->
+<!--           <div class="test3 list3"></div>  &lt;!&ndash;    list1 = 클래스는 나타나는 순서를 설정한 클래스 , test1 = 위치 설정을 하기 위해 임의로 주는 클래스 &ndash;&gt;-->
+<!--           <div class="test4 list4"></div>  &lt;!&ndash;    list1 = 클래스는 나타나는 순서를 설정한 클래스 , test1 = 위치 설정을 하기 위해 임의로 주는 클래스 &ndash;&gt;-->
+
+<!--        </div>-->
+        <!--=========================================================================================================================================================================-->
+
+    </div>
+    <div class="section" id="section03"><a href="#"><img src="img/03.jpg"></a></div>
+    <div class="section" id="section04"><a href="#"><img src="img/11.jpg"></a></div>
+    <div class="section" id="section05"><a href="#"><img src="img/17.jpg"></a></div>
+    <div class="section" id="section06"><a href="#"><img src="img/23.jpg"></a></div>
+    <div class="section" id="section07"><a href="#"><img src="img/26.jpg"></a></div>
+    <div class="section" id="section08"><a href="#"><img src="img/29.jpg"></a></div>
+    <div class="section" id="section09"><a href="#"><img src="img/31.jpg"></a></div>
+    <div class="section" id="section10"><a href="#"><img src="img/33.jpg"></a></div>
+</div><!--fullpage end-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
