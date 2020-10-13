@@ -146,23 +146,20 @@ a{text-decoration:none;outline: 0}
 
 
 
+body {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    left: 125px;
+    bottom: 115px;
+}
 
 
 
-#section01{background:url("../img/bg1.jpg")no-repeat center top;background-size:cover;}
 
-#section02{background:url("../img/bg2.jpg")no-repeat center top;background-size:cover;}
 
-/*설정을 보여드리기 위해 테스트로 써둔것 뿐입니다 참고하셔서 다른 영억 코딩하지고 완성되면 지우세요*/
-#section02 .test1 {width:100px;height:100px;background:tomato}
-#section02 .test2 {width:100px;height:100px;background:orange;}
-#section02 .test3 {width:100px;height:100px;background:yellow;}
-#section02 .test4 {width:100px;height:100px;background:green;}
-/*=======================================================================================*/
-
-#section03{background:url("../img/bg3.jpg")no-repeat center top;background-size:cover;}
-#section04{background:url("../img/bg4.jpg")no-repeat center top;background-size:cover;}
-#section05{background:url("../img/bg5.jpg")no-repeat center top;background-size:cover;}
 
 
 
